@@ -1,0 +1,8 @@
+trial,design,layer,keep,learn_rate,Train,Validation,
+1,POR,32x32x3 ->28x28x6->14x14x6->10x10x16->5x5x16->84->43,1,0.001,0.991,0.886,
+2,POR,32x32x3 ->28x28x6->14x14x6->10x10x16->5x5x16->84->43,0.5 for 1st conv layer,0.001,0.983,0.89,
+3,POR,32x32x3 ->28x28x6->14x14x6->10x10x16->5x5x16->84->43,0.3,0.005,0.888,0.786,
+4,POR,32x32x3 ->28x28x6->14x14x6->10x10x16->5x5x16->84->43,0.75,0.001,0.982,0.927,"shuffle 20% of train sample to validation sample, EPOCHS = 10"
+5,POR,32x32x3 ->28x28x6->14x14x6->10x10x16->5x5x16->84->43,0.75,0.005,0.99,0.905,
+6,POR,32x32x3 ->28x28x6->14x14x6->10x10x16->5x5x16->84->43,1,0.001,0.993,0.94,"shuffle 20% of train sample to validation sample, EPOCHS = 10"
+,,32x32x3 ->28x28x6->14x14x6->10x10x64->5x5x64->84->43,0.5 for 2nd conv layer,0.001,,,"shuffle 20% of train sample to validation sample, EPOCHS = 10"
